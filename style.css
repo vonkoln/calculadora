@@ -22,10 +22,8 @@ body *
   letter-spacing: -0.02em;
 }
 
-#calculator
+.calculator
 {
-  width: 356px;
-  height: 566px;
   background: #2d2a37;
   box-shadow:
    0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -39,7 +37,7 @@ body *
   border-radius: 48px;
 }
 
-#display
+.display
 {
   margin-top: 54px;
   padding-inline: 54px;
@@ -71,15 +69,15 @@ body *
 
 #keyboard
 {
-  margin-top: 26px;
-  margin-inline: 32px;
+  padding: 26px 32px 32px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 10px 12px;
 }
 
-button
+.btn
 {
+  margin-bottom: 2px;
   border: 0;
   width: 64px;
   height: 64px;
@@ -104,19 +102,51 @@ button
   justify-content: center;
 }
 
-.secondary
+.btn:hover
+{
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.05) 0%,
+   rgba(255, 255, 255, 0.05) 100%), #1d1b1e;
+  box-shadow: 
+  0px 11px 7px rgba(0, 0, 0, 0.01), 
+  0px 7px 7px rgba(0, 0, 0, 0.04), 
+  0px 4px 6px rgba(0, 0, 0, 0.1),
+  0px 2px 4px rgba(0, 0, 0, 0.26),
+  0px 0px 2px rgba(0, 0, 0, 0.29),
+  inset 0px 2px 3px rgba(255, 255, 255, 0.06);;
+}
+
+.btn:active
+{
+  margin-top: 2px;
+  margin-bottom: 0px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-clear
 {
   color: #975DFA;
 }
 
-.tertiary
+.btn.btn-num.op
 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
 box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
 }
+.btn.btn-num.op:hover
+{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #2b184a;
+box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
 
-.quartiary
+.btn.btn-num.eq
 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
+}
+.btn.btn-num.eq:hover
+{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #5e33a9;
 box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.1);
 }

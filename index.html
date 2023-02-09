@@ -9,50 +9,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="main.js"></script>
 </head>
 <body>
-  <div id="calculator">
-    <div id="display">
+  <div class="calculator">
+    <div type="text" class="display">
       <div id="last-calc">1+1</div>
       <div id="result">
-        <img src="./assets/equals.svg" alt="sinal de igual">
+        <img src="./assets/equals.svg" alt="sinal de igual"> 
         <span>2</span>
       </div>
     </div>
     <div id="keyboard">
-      <button class="secondary">CE</button>
-      <button>C</button>
-      <button>%</button>
-      <button class="tertiary">
+      <button class="btn btn-clear">CE</button>
+      <button class="btn btn-clear">(</button>
+      <button class="btn btn-clear">)</button>
+      <button class="btn btn-num op">
         <img src="./assets/divide.svg" alt="Divide">
         </button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="tertiary">
+        <button class="btn btn-num">7</button>
+        <button class="btn btn-num">8</button>
+        <button class="btn btn-num">9</button>
+        <button class="btn btn-num op">
           <img src="./assets/x.svg" alt="Multiplication">
           </button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button class="tertiary">
+          <button class="btn btn-num">4</button>
+          <button class="btn btn-num">5</button>
+          <button class="btn btn-num">6</button>
+          <button class="btn btn-num op">
             <img src="./assets/minus.svg" alt="Minus">
       </button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button class="tertiary">
+      <button class="btn btn-num">1</button>
+      <button class="btn btn-num">2</button>
+      <button class="btn btn-num">3</button>
+      <button class="btn btn-num op">
         <img src="./assets/plus.svg" alt="Plus">
         </button>
-        <button>
-          <img src="./assets/plusminus.svg" alt="PlusMinus"> 
-          </button>         
-        <button>0</button>
-        <button>,</button>
-      <button class="quartiary">
+        <button class="btn btn-num">.</button>         
+        <button class="btn btn-num">0</button>
+        <button class="btn btn-del">&laquo;</button>
+      <button class="btn btn-num eq">
       <img src="./assets/result.svg" alt="Equals">  
       </button>
     </div>
   </div>
+  
 </body>
 </html>
