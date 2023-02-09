@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +11,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="calculator"></div>
+  <div id="calculator">
+    <div id="display">
+      <div id="last-calc">1+1</div>
+      <div id="result">
+        <img src="./assets/equals.svg" alt="sinal de igual">
+        <span>2</span>
+      </div>
+    </div>
+    <div id="keyboard">
+      <button class="secondary">CE</button>
+      <button>C</button>
+      <button>%</button>
+      <button class="tertiary">
+        <img src="./assets/divide.svg" alt="Divide">
+      </button>
+      <button class="quartiary">4</button>
+    </div>
+  </div>
 </body>
 </html>
